@@ -6,12 +6,12 @@ import { getFirestore } from "firebase/firestore";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyDamZJSZ_j5H3h28yhXB3K5anaBX0O_bOk",
-  authDomain: "weather-todo-app-a018e.firebaseapp.com",
-  projectId: "weather-todo-app-a018e",
-  storageBucket: "weather-todo-app-a018e.appspot.com",
-  messagingSenderId: "677929105552",
-  appId: "1:677929105552:web:2d0bc2a204b28d51524015"
+    apiKey: process.env.WEATHER_TODO_APIKEY,
+    authDomain: process.env.WEATHER_TODO_AUTHDOMAIN,
+    projectId: process.env.WEATHER_TODO_PROJECTID,
+    storageBucket: process.env.WEATHER_TODO_STORAGEBUCKET,
+    messagingSenderId: process.env.WEATHER_TODO_MESSAGINGSENDERID,
+    appId: process.env.WEATHER_TODO_APPID
 };
 
 // Initialize Firebase
